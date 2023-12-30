@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - Build your own PC Landing page</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav
+      class="navbar sticky-top container-fluid navbar-expand-lg py-3 bg-warning"
+    >
+      <div class="container">
+        <!-- logo  -->
+        <a
+          class="f-f-bebas__neue navbar-brand ps-2 border border-dark rounded fs-3 h5"
+          href="#"
+          >PC
+          <span class="text-bg-dark py-1 px-2 ms-1 rounded-end"
+            >Builder</span
+          ></a
+        >
+        <!-- logo  -->
+
+        <!-- Hammberger button  -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon border-0"></span>
+        </button>
+        <!-- Hammberger button  -->
+
+        <!-- nav links  -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-5">
+              <a
+                class="nav-link fs-5 p-1 fw-semibold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-5 p-1 fw-semibold" href="#">Pricing</a>
+            </li>
+            <!-- drop down  -->
+            <li class="nav-item me-5 dropdown">
+              <a
+                class="nav-link fs-5 p-1 fw-semibold dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Components Available Now
+              </a>
+
+              <!-- drop down list items   -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Intel Motherboards </a>
+                </li>
+                <li><a class="dropdown-item" href="#">AMD Motherboards</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Nvidia Graphic Cards </a>
+                </li>
+              </ul>
+              <!-- drop down list items   -->
+            </li>
+            <!-- drop down  -->
+          </ul>
+        </div>
+        <!-- nav links  -->
+      </div>
+    </nav>
+    <!-- nav  -->
+    <main class="container-fluid g-0">
+      <!-- hero section  -->
+      <div class="container-fluid bg-body-secondary">
+        <div class="container border-bottom p-lg-5 p-md-1 py-5 px-2">
+          <div
+            class="d-flex align-content-center flex-lg-row flex-column-reverse"
+          >
+            <!-- hero text  -->
+            <div class="hero-text d-flex flex-column justify-content-center">
+              <h1 class="f-f-bebas__neue display-1">
+                Get Your Perfect PC Today!
+              </h1>
+              <p class="text-secondary fs-5">
+                Choose from Our Pre-Built Selection or Build Your Own with Your
+                PC!
+              </p>
+              <!-- action btns  -->
+              <div class="action-btns py-3 py-sm-1">
+                <a
+                  href="#"
+                  class="btn m-2 fw-semibold fs-5 border bg-body-tertiary"
+                  >Pre-built</a
+                >
+                <a
+                  href="#"
+                  class="btn me-4 fw-semibold fs-5 border text-bg-dark"
+                  >Build it your self</a
+                >
+              </div>
+              <!-- action btns  -->
+            </div>
+            <!-- hero text  -->
+
+            <!-- hero image  -->
+            <div class="hero-image">
+              <img
+                src="./assets/images/build_from_scratch.png"
+                alt="Pc building image "
+                width="100%"
+              />
+            </div>
+            <!-- hero image  -->
+          </div>
+        </div>
+      </div>
+      <!-- hero section  -->
+
+      <!-- components Cards  -->
+      <div class="py-5 px-2 plg-5 bg-primary">
+        <div class="container">
+          <p class="display-4 f-f-bebas__neue">Components</p>
+        </div>
+        <div class="container">
+          <!-- first row  -->
+          <div class="row my-5">
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/motherboard.png"
+                  alt="motherboard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Motherboards</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/Processor-Transparent-PNG.png"
+                  alt="Processor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Processors</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/cpu-cooler.png"
+                  alt="cpu-cooler"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coolers</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- first row  -->
+
+          <!-- second row  -->
+          <div class="row my-lg-5 my-2">
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/hard-disk.png"
+                  alt="hard-disk"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Storage Disks</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent col m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/power-supply.png"
+                  alt="power-supply"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Power supplys</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col">
+              <div
+                class="card bg-transparent m-1 border border-dark rounded p-3 pointer"
+              >
+                <img
+                  class="card-img-top"
+                  width="250px"
+                  height="250px"
+                  src="./assets/images/GeForce-RTX™-4070-Ti-EAGLE-OC-12G-08.png"
+                  alt="Graphic card "
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Cards</h5>
+                  <a href="#" class="btn btn-warning">Check availability</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second row  -->
+        </div>
+      </div>
+      <!-- components Cards  -->
+    </main>
+    <!-- footer -->
+    <footer>
+      <!-- footer links   -->
+      <div class="p-5 container-fluid text-bg-dark">
+        <!-- container -->
+        <div class="container">
+          <!-- row -->
+          <div class="row">
+            <!-- 1st-column -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <ol class="list-unstyled d-flex flex-column gap-3">
+                <!-- logo -->
+                <li>
+                  <!-- logo  -->
+                  <a
+                    class="f-f-bebas__neue navbar-brand ps-2 border rounded fs-3 h5"
+                    href="#"
+                    >PC
+                    <span class="text-bg-light px-2 ms-1 rounded-end"
+                      >Builder</span
+                    ></a
+                  >
+                  <!-- logo  -->
+                </li>
+                <!-- mail -->
+                <li class="text-bg-dark">
+                  <i class="bi bi-envelope"></i>
+                  <a
+                    href="mailto:saikarthik2607@gmail.com"
+                    class="text-light text-decoration-none"
+                    >saikarthik2607@gmail.com</a
+                  >
+                </li>
+                <!-- phone -->
+                <li class="text-bg-dark">
+                  <i class="bi bi-telephone"></i>
+                  <a
+                    href="tel:+918309969020"
+                    class="text-light text-decoration-none"
+                    >+91 8309969020</a
+                  >
+                </li>
+              </ol>
+            </div>
+            <!-- 1st-column -->
+
+            <!-- 2nd-column -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <ol class="list-unstyled d-flex flex-column gap-3">
+                <li class="fw-medium fs-5">Information</li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >About us</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Location</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Instructions</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none">Prices</a>
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none">FAQs</a>
+                </li>
+              </ol>
+            </div>
+            <!-- 2nd-column -->
+
+            <!-- 3rd-column -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <ol class="list-unstyled d-flex flex-column gap-3">
+                <li class="fw-medium fs-5">PC Services</li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Pre-built</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Custom Build</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Custom Loop</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none">Sales</a>
+                </li>
+              </ol>
+            </div>
+            <!-- 3rd-column -->
+
+            <!-- 4th-column -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <ol class="list-unstyled d-flex flex-column gap-3">
+                <li class="fw-medium fs-5">Components</li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Motherboards</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Processors</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Storage devices</a
+                  >
+                </li>
+                <li class="fw-light">
+                  <a href="#" class="text-light text-decoration-none"
+                    >Graphic cards</a
+                  >
+                </li>
+              </ol>
+            </div>
+            <!-- 4th-column -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- footer links   -->
+
+      <!-- copy rights  -->
+      <div class="container-fluid bg-dark-subtle p-4">
+        <!-- container -->
+        <div class="container">
+          <div class="row align-items-center">
+            <p class="col-9 m-0 fw-medium">
+              Copyright 2023. All rights reserved
+            </p>
+            <!-- social icons  -->
+            <ul
+              class="col-3 m-0 d-flex justify-content-end align-items-center gap-3 list-unstyled"
+            >
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kona-sai-karthik-1b7886253/"
+                  target="_blank"
+                  class="fs-2"
+                  ><i class="bi bi-linkedin text-dark"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/kona-147"
+                  target="_blank"
+                  class="fs-2"
+                  ><i class="bi bi-github text-dark"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- social icons  -->
+          </div>
+        </div>
+        <!-- container -->
+      </div>
+      <!-- copy rights  -->
+    </footer>
+    <!-- footer -->
+
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
